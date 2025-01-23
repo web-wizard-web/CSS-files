@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>CSS SElectors</title>
+<style>
+/* 1 UNIVERSAL SELECTOR*/
+    *{
+        margin: 0;
+          padding: 0; 
+         box-sizing: border-box; 
+    }
+
+/* 2. type SELECTOR  */
+p{
+    font-size: 16px;
+    margin: 10px 20px 10px 20px;
+    padding: 10px 20px;
+}
+ /* 3.CLASS SELECTOR */
+
+.highlight {
+    background-color: blue;
+}
+/* 4.ID SELECTOR  */
+#header
+ {
+    background-color: aqua;
+}  
+
+/* 5.ATTRIBUTE SELECTOR  */
+input[type="text"] {
+border: 3px solid #ab4242;
+}
+
+/* 6.DESCENDENT SELECTOR */
+article p
+{
+font-style: italic;
+background-color: rgb(192, 192, 21);
+color: #000;
+padding: 10px;
+}
+
+/* 7.CHILD SELECTOR */
+div > p {
+    background-color: #d9792b;
+    padding-bottom: 2vdh;
+    margin-bottom: 5px;
+}
+
+/* 8.ADJACENT SIBLING SELECTOR */
+h1+p {
+    background-color: #65bbdb;
+    font-weight: bold;
+}
+
+/* 9.GENERAL SIBLING SELECTOR */
+h2~p {
+    color: #d20e0e;
+}
+
+/* 10. PSEUDO CLASS SELECTOR */
+ a:hover {
+    background-color: #0dc02d;
+    text-decoration: none;
+    color: #030d42;
+    font-size: larger;
+ }
+
+ /* 11.PSEUDO  ELEMENT SELECTOR */
+P::first-letter {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* 12.GROUPING SELECTOR */
+h1,h2,h3{
+    color: #d21b98;
+}
+
+</style>
+<body>
+    <header id="header"> this is a header</header>
+    <h1>Main Heading</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt harum, nostrum fuga nemo ea suscipit voluptas neque delectus expedita, ipsam debitis rem adipisci ab animi quod quasi pariatur! Qui perferendis quisquam ducimus, culpa aliquid quae nesciunt! Sunt aperiam vero ullam voluptas omnis voluptates, quisquam, excepturi quod, id cum minus aliquam.</p>
+    <p class="highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ab quisquam sit illum suscipit sequi voluptas voluptatem voluptate fugiat voluptatum?</p>
+
+    <input type="text" name="" id="" placeholder="Enter text here">
+
+    <article>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, quia?
+        </p>
+    </article>
+
+    <div>
+        <p>I am a child</p>
+        <p>I am a child</p>
+        <section>
+            <p>i am a descendent</p>
+        </section>
+        <p>I am a child</p>
+    </div>
+
+    <h2>SubHeading</h2>
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum adipisci, delectus saepe eos quod atque eum, aliquam necessitatibus assumenda qui placeat minima eaque numquam ipsa, officiis a excepturi inventore nostrum.
+    Sit necessitatibus unde omnis laudantium explicabo assumenda delectus, accusantium aut natus earum vitae quas est sint nihil accusamus placeat sequi labore iste. Similique nihil, iusto voluptatum beatae excepturi voluptates quibusdam.
+    Architecto veritatis modi, libero eum ex eos placeat reiciendis fuga fugit quae aliquid quisquam culpa voluptate cupiditate labore quo hic voluptatibus expedita quos ipsam aspernatur earum! Id est obcaecati ullam!
+    Veniam blanditiis fugiat autem itaque porro, laborum molestiae doloribus ea asperiores similique cupiditate sapiente amet odio quae voluptates enim vel quibusdam laudantium quasi, quam modi nobis. Sunt perferendis et consectetur?
+    Numquam corrupti praesentium ipsum veritatis quibusdam unde delectus non eum, laudantium, qui dignissimos recusandae rem eveniet minus suscipit molestias explicabo reiciendis mollitia distinctio? Tenetur corporis dicta dolorem id eaque odio?
+    Tenetur ullam, impedit ipsum fugiat esse, commodi mollitia nihil dicta autem beatae aspernatur? Porro molestias eaque quia corrupti maiores. Nobis vel est magni voluptatum aliquid. Aliquam praesentium blanditiis nemo deleniti.
+    Eum perspiciatis maiores odit odio fugit dolore officia quisquam aspernatur recusandae, error explicabo fugiat! Enim laborum vero voluptate pariatur illum! Ab voluptatibus alias nisi ducimus eveniet. Mollitia tenetur velit ea.
+    </p>
+    <a href="#">Hover over me  to see the pseudo class selector in action
+    </a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet obcaecati architecto nesciunt repudiandae aliquam. Facilis officiis dolorum cumque. Sit esse cumque iste fugiat quis sint ducimus ipsa porro quia?
+    Animi ullam amet repellendus odio aliquam quas laboriosam neque provident suscipit. Itaque dolore vitae deleniti debitis doloribus incidunt quibusdam at adipisci atque qui. Delectus iste iure, velit quae a animi.
+    Nam nostrum, laborum in libero quas qui doloribus laboriosam ut incidunt pariatur sit numquam officia, reprehenderit similique perspiciatis eos maiores? Velit, dolorem? Dolor expedita, a sunt eos aspernatur inventore unde.
+    Iure, aliquam vero? Quia magni accusamus hic recusandae distinctio adipisci harum eum dicta voluptatibus nobis, id numquam rem consequatur magnam officia facere delectus minus molestiae. Doloribus accusantium magni id. Vitae!
+    Enim, possimus fuga ipsam quod ut quae ullam odio suscipit quis provident ea? Veritatis velit molestiae fuga tenetur facilis ea, illum officiis id, nihil accusamus ipsa explicabo ducimus ipsum quae.</p>
+
+    <h3>Heading 3</h3>
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, illo soluta obcaecati neque deserunt amet iste quod numquam, ullam rerum perspiciatis aperiam natus distinctio sunt minus omnis. Non, commodi dicta?</span><span>Distinctio provident cumque repellendus natus hic ea quibusdam beatae, optio neque cum cupiditate odio velit impedit quam eius, enim expedita. Quos, voluptatem ratione. Hic labore, in nostrum ratione quasi quam.</span><span>Temporibus voluptas autem ea quae? Voluptates quisquam, ipsum dolore magnam debitis, qui eveniet architecto, optio ipsa atque enim laborum eligendi iusto commodi unde illo! Ullam nemo nobis numquam recusandae aperiam.</span><span>Delectus libero culpa accusamus qui facilis adipisci natus nulla iure nihil. Quis dolorum, tempora culpa quaerat rerum quos voluptatibus at velit obcaecati! Praesentium aliquid nostrum quasi mollitia ut fugiat quisquam.</span></p>
+    </body>
+</html>
