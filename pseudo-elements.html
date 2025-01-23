@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boring-text::after {
+            content: " <- Boring";
+            color: green;
+        }
+
+        .exciting-text::after {
+          content: "<- Exciting";
+           color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="boring-text"> Here is some old text </p>
+    <p>Here is some text that is neither interesting nor boring</p>
+    <p class="exciting-text"> Here we have some exciting text</p>
+</body>
+</html>
