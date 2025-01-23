@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            height: 150px;
+            width: 200px;
+            margin: 20px;
+            padding: 20px;
+            border: 12px solid black;
+        }
+        .box{
+            background-color: blueviolet;
+        }
+        
+
+        .Border-box-demo{
+            box-sizing: border-box;
+             background-color: aqua;
+        
+        }
+
+        .content-box-demo {
+            box-sizing: content-box;
+            background-color:  #383737;
+        }
+    </style>
+</head>
+<body>
+    <h1>Default box Example</h1>
+    <div class="box"> THIS IS DEMONSTRATING A NORMAL BOX
+    </div>
+    
+    <h1>Border Box Example</h1>
+    <div class="Border-box-demo"> This one is demonstrating a Border box where you have to fit elemts in the given height and width.</div>
+
+    <h1>Content box example</h1>
+    <div class="content-box-demo"> this one is demonstrating a content box   where you have to fit elemts in the given height and width the content box will shrink to absorb any extrs space from the border or padding. The width and height are calculated based on the content inside the element</div>
+    
+</body>
+</html>
